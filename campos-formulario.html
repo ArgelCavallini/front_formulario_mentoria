@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+      <form id="form" action="" method="POST">
+        <fieldset>
+          <div class="fildseat-wrapper">
+            <legend>Informações pessoais</legend>
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="dsTitulo">Nome</label>
+                <input type="text" name="dsNome" id="dsNome" required />
+              </div>
+              <div class="input-wrapper">
+                <label for="dsSobrenome">Sobrenome </label>
+                <input type="text" name="dsSobrenome" id="dsSobrenome" />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="dsEmail"
+                >Email <span>(digite um email válido)</span></label
+              >
+              <input type="email" name="dsEmail" id="dsEmail" />
+            </div>
+            <div class="input-wrapper">
+              <label for="dsSenha"
+                >Senha <span>(mínimo 6 caracteres)</span></label
+              >
+              <input type="password" name="dsSenha" id="dsSenha" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fildseat-wrapper">
+            <legend>Informações do mentor</legend>
+            <div class="input-wrapper">
+              <label for="dsTitulo"
+                >Nome do seu mentor<span>(só o primeiro nome)</span></label
+              >
+              <input
+                type="text"
+                name="dsNome"
+                id="dsNome"
+                required
+                minlength="8"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fildseat-wrapper">
+            <legend>Seus horários disponíveis</legend>
+            <sub>Primeira mentoria</sub>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="dtData1">Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="dtData1" id="dtData1" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hrInicio1">Das</label>
+                <input type="time" name="hrInicio1" id="hrInicio1" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hrFim1">Até</label>
+                <input type="time" name="hrFim1" id="hrFim1" />
+              </div>
+            </div>
+            <sub>Segunda mentoria</sub>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="dtData2">Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="dtData2" id="dtData2" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hrInicio2">Das</label>
+                <input type="time" name="hrInicio2" id="hrInicio2" />
+              </div>
+              <div class="input-wrapper">
+                <label for="hrFim2">Até</label>
+                <input type="time" name="hrFim2" id="hrFim2" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <footer>
+        <input type="submit" class="button" form="form" value="Salvar" />
+      </footer>
+    </div>
+  </body>
+</html>
